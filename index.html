@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore o universo da Realidade Aumentada: tecnologia, aplicações e o futuro da interação digital com o mundo físico." />
+  <title>Realidade Aumentada — Atividade 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+      <div class="container">
+        <a href="#" class="navbar__logo" aria-label="Início">
+          🔮 <span>RA</span>visão
+        </a>
+
+        <ul class="navbar__links" id="nav-links" role="list">
+          <li><a href="#o-que-e">O que é RA</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#aplicacoes">Aplicações</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#contato" class="navbar__cta">Saiba Mais</a></li>
+        </ul>
+
+        <button class="navbar__toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <span class="hero__tag">✨ Atividade 2 — Realidade Aumentada</span>
+
+        <h1 class="hero__title" id="hero-title">
+          O Futuro Está na<br>
+          <span class="highlight">Realidade Aumentada</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Descubra como a RA sobrepõe informações digitais ao mundo real,
+          transformando a maneira como interagimos com o ambiente ao nosso redor.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#o-que-e" class="btn btn--primary">
+            <span>Explorar</span> →
+          </a>
+          <a href="#como-funciona" class="btn btn--outline">
+            Como Funciona
+          </a>
+        </div>
+
+        <!-- AR visual mockup -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="ar-frame">
+            <div class="ar-corners"></div>
+            <div class="ar-scene">
+              <div class="ar-object">
+                <div class="ar-object__icon">🧬</div>
+                <span class="ar-object__label">Modelo 3D</span>
+              </div>
+              <div class="ar-object">
+                <div class="ar-object__icon">🌐</div>
+                <span class="ar-object__label">Espaço AR</span>
+              </div>
+              <div class="ar-object">
+                <div class="ar-object__icon">📱</div>
+                <span class="ar-object__label">Dispositivo</span>
+              </div>
+            </div>
+            <div class="ar-hud">
+              <div class="ar-hud__item">
+                <div class="ar-hud__dot"></div>
+                AR Ativo
+              </div>
+              <div class="ar-hud__item">📡 Rastreando superfície</div>
+              <div class="ar-hud__item">🎯 Âncoras: 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== O QUE É RA ===== -->
+    <section class="about" id="o-que-e" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__text">
+            <h2 id="about-title" class="section__title" style="text-align:left; margin-bottom:0.75rem;">O que é Realidade Aumentada?</h2>
+            <p>
+              A <strong>Realidade Aumentada (RA)</strong> é uma tecnologia que combina o mundo físico com elementos digitais
+              — como imagens, sons, vídeos e modelos 3D — em tempo real, enriquecendo a percepção do ambiente ao redor.
+            </p>
+            <p>
+              Diferente da Realidade Virtual (RV), que cria ambientes completamente sintéticos, a RA mantém o usuário
+              conectado ao mundo real enquanto adiciona camadas de informação digital sobre ele, geralmente por meio
+              de smartphones, tablets ou óculos especializados.
+            </p>
+            <p>
+              O conceito foi formalizado por Paul Milgram e Fumio Kishino em 1994 com o <em>Reality-Virtuality Continuum</em>,
+              e desde então evoluiu de laboratórios de pesquisa para aplicações comerciais em diversas indústrias.
+            </p>
+
+            <div class="about__stats">
+              <div class="stat-card">
+                <div class="stat-card__value">$198bi</div>
+                <div class="stat-card__label">Mercado global de RA/RV em 2025</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__value">4,3bi</div>
+                <div class="stat-card__label">Usuários de RA ativos esperados</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__value">30+</div>
+                <div class="stat-card__label">Setores industriais impactados</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__value">1994</div>
+                <div class="stat-card__label">Definição formal de RA</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__image-block" aria-label="Camadas tecnológicas da Realidade Aumentada">
+            <div class="tech-layer">
+              <div class="tech-layer__icon">📷</div>
+              <div class="tech-layer__info">
+                <strong>Captura do Ambiente</strong>
+                <span>Câmera e sensores identificam a cena real</span>
+              </div>
+            </div>
+            <div class="tech-layer">
+              <div class="tech-layer__icon">🧠</div>
+              <div class="tech-layer__info">
+                <strong>Processamento de Imagem</strong>
+                <span>Algoritmos detectam superfícies e marcadores</span>
+              </div>
+            </div>
+            <div class="tech-layer">
+              <div class="tech-layer__icon">📐</div>
+              <div class="tech-layer__info">
+                <strong>Rastreamento e Ancoragem</strong>
+                <span>Objetos virtuais são fixados no espaço físico</span>
+              </div>
+            </div>
+            <div class="tech-layer">
+              <div class="tech-layer__icon">🖼️</div>
+              <div class="tech-layer__info">
+                <strong>Renderização em Camadas</strong>
+                <span>Elementos 3D são sobrepostos à cena ao vivo</span>
+              </div>
+            </div>
+            <div class="tech-layer">
+              <div class="tech-layer__icon">👁️</div>
+              <div class="tech-layer__info">
+                <strong>Exibição para o Usuário</strong>
+                <span>Tela, óculos ou HMD apresentam o resultado final</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FUNCIONALIDADES ===== -->
+    <section class="features" id="funcionalidades" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Recursos</span>
+          <h2 class="section__title" id="features-title">Principais Características da RA</h2>
+          <p class="section__desc">
+            A Realidade Aumentada combina múltiplas tecnologias para criar experiências interativas e imersivas.
+          </p>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">📡</div>
+            <h3 class="feature-card__title">Rastreamento Espacial</h3>
+            <p class="feature-card__desc">
+              Tecnologias como SLAM (Simultaneous Localization and Mapping) permitem que o sistema compreenda
+              e mapeie o ambiente em tempo real, posicionando objetos virtuais com precisão.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🕹️</div>
+            <h3 class="feature-card__title">Interação em Tempo Real</h3>
+            <p class="feature-card__desc">
+              Usuários podem interagir com elementos digitais usando gestos, toque ou comandos de voz,
+              criando experiências naturais e intuitivas.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🌐</div>
+            <h3 class="feature-card__title">Sobreposição de Contexto</h3>
+            <p class="feature-card__desc">
+              Informações relevantes são exibidas diretamente sobre objetos reais, como instruções de
+              montagem, dados de sensores ou rotas de navegação.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🔗</div>
+            <h3 class="feature-card__title">Multi-plataforma</h3>
+            <p class="feature-card__desc">
+              Funciona em dispositivos móveis (ARKit, ARCore), óculos dedicados (HoloLens, Magic Leap)
+              e navegadores web (WebXR), ampliando o alcance da tecnologia.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🎯</div>
+            <h3 class="feature-card__title">Reconhecimento de Imagem</h3>
+            <p class="feature-card__desc">
+              Marcadores visuais e objetos físicos servem como âncoras que disparam conteúdo
+              digital, conectando o mundo físico ao digital de forma precisa.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🤝</div>
+            <h3 class="feature-card__title">RA Colaborativa</h3>
+            <p class="feature-card__desc">
+              Múltiplos usuários podem compartilhar o mesmo espaço aumentado, colaborando
+              em projetos e visualizando os mesmos objetos virtuais simultaneamente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APLICAÇÕES ===== -->
+    <section class="use-cases" id="aplicacoes" aria-labelledby="usecases-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Aplicações</span>
+          <h2 class="section__title" id="usecases-title">Onde a RA é Utilizada</h2>
+          <p class="section__desc">
+            A Realidade Aumentada já está transformando indústrias inteiras ao redor do mundo.
+          </p>
+        </div>
+
+        <div class="use-cases__grid">
+          <article class="case-card case-card--health">
+            <div class="case-card__cover">🏥</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Saúde</h3>
+              <p class="case-card__desc">
+                Cirurgias guiadas por RA, visualização de anatomia 3D em tempo real e treinamento médico
+                com simulações imersivas.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--edu">
+            <div class="case-card__cover">📚</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Educação</h3>
+              <p class="case-card__desc">
+                Livros didáticos interativos, laboratórios virtuais e experiências de aprendizado
+                imersivas que aumentam o engajamento dos estudantes.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--retail">
+            <div class="case-card__cover">🛍️</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Varejo</h3>
+              <p class="case-card__desc">
+                Provadores virtuais, visualização de móveis no ambiente doméstico e experiências
+                de compra personalizadas com RA.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--games">
+            <div class="case-card__cover">🎮</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Jogos</h3>
+              <p class="case-card__desc">
+                Games que misturam o mundo real com desafios digitais, como Pokémon GO,
+                criando experiências de entretenimento únicas.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--arch">
+            <div class="case-card__cover">🏗️</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Arquitetura</h3>
+              <p class="case-card__desc">
+                Visualização de projetos arquitetônicos em escala real no local da obra, facilitando
+                decisões de design antes da construção.
+              </p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--mfg">
+            <div class="case-card__cover">🏭</div>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Indústria</h3>
+              <p class="case-card__desc">
+                Manutenção assistida por RA, treinamento de operadores com guias passo a passo
+                sobrepostos diretamente nas máquinas reais.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="how-it-works" id="como-funciona" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Processo</span>
+          <h2 class="section__title" id="how-title">Como a RA Funciona</h2>
+          <p class="section__desc">
+            Da captura do mundo real à renderização do conteúdo digital, em milissegundos.
+          </p>
+        </div>
+
+        <div class="steps" role="list">
+          <div class="step" role="listitem">
+            <div class="step__number">1</div>
+            <h3 class="step__title">Captura da Cena</h3>
+            <p class="step__desc">
+              A câmera e os sensores do dispositivo capturam imagens e dados
+              do ambiente físico em tempo real.
+            </p>
+          </div>
+
+          <div class="step" role="listitem">
+            <div class="step__number">2</div>
+            <h3 class="step__title">Análise e Rastreamento</h3>
+            <p class="step__desc">
+              Algoritmos de visão computacional identificam superfícies, profundidade
+              e pontos de referência na cena.
+            </p>
+          </div>
+
+          <div class="step" role="listitem">
+            <div class="step__number">3</div>
+            <h3 class="step__title">Geração de Conteúdo</h3>
+            <p class="step__desc">
+              Objetos 3D, textos ou vídeos são calculados e posicionados
+              virtualmente no espaço detectado.
+            </p>
+          </div>
+
+          <div class="step" role="listitem">
+            <div class="step__number">4</div>
+            <h3 class="step__title">Composição da Imagem</h3>
+            <p class="step__desc">
+              O conteúdo digital é renderizado sobre o vídeo real, respeitando
+              perspectiva, iluminação e oclusão.
+            </p>
+          </div>
+
+          <div class="step" role="listitem">
+            <div class="step__number">5</div>
+            <h3 class="step__title">Exibição Aumentada</h3>
+            <p class="step__desc">
+              O resultado final é exibido na tela do dispositivo, criando
+              a ilusão de que os objetos virtuais existem no mundo real.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="contato" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta-section__title" id="cta-title">
+          Pronto para Explorar a Realidade Aumentada?
+        </h2>
+        <p class="cta-section__desc">
+          Aprofunde seus conhecimentos sobre RA e descubra como essa tecnologia
+          está moldando o futuro digital.
+        </p>
+        <div class="hero__actions">
+          <a href="https://developer.apple.com/augmented-reality/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            ARKit (Apple) →
+          </a>
+          <a href="https://developers.google.com/ar" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            ARCore (Google)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo" aria-label="Início">🔮 <span>RA</span>visão</a>
+          <p>
+            Página desenvolvida como parte da Atividade 2 do estudo sobre
+            Realidade Aumentada — tecnologia que une o físico e o digital.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#o-que-e">O que é RA</a></li>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#aplicacoes">Aplicações</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Referências</h4>
+          <ul>
+            <li><a href="https://developer.apple.com/augmented-reality/" target="_blank" rel="noopener noreferrer">ARKit — Apple</a></li>
+            <li><a href="https://developers.google.com/ar" target="_blank" rel="noopener noreferrer">ARCore — Google</a></li>
+            <li><a href="https://immersiveweb.dev/" target="_blank" rel="noopener noreferrer">WebXR</a></li>
+            <li><a href="https://www.microsoft.com/en-us/hololens" target="_blank" rel="noopener noreferrer">HoloLens</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 RAvvisão · Atividade 2 — Realidade Aumentada</p>
+        <p>Desenvolvido para fins educacionais</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
